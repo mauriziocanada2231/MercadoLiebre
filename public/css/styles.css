@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --amarillo:#EAC926;
+    --azul:#03264C;
+    --celeste:#1259c3;
+    --gris_claro:#ebebeb;
+    --gris_oscuro:#666;
+    --verde:#39b54a;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: var(--amarillo);
+    height: 370px;
+    width: 100%;
+    padding-top: 20px;
+}
+.logoprincipal{
+    /* width: 50%; */
+    display: flex;
+    justify-content: flex-end;
+}
+.navigationBar{
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-left: 10px;
+    
+}
+
+.positionBar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigationBar::placeholder{
+    color: var(--gris_oscuro);
+}
+
+.lupa{
+    height: 19px;
+    width: 19px;
+}
+
+.logos{
+    height: 17px;
+    width: 17px;
+    margin-bottom: -3px;
+}
+.headertitulo{
+    /* padding-right: 50%; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   
+}
+
+.headerlogos svg path{
+    fill: var(--gris_claro);
+}
+.headerlogos{
+    width: 3em;
+    height: 3em;
+    background-color:var(--celeste);
+    border-radius: 15%;
+    padding: 10px 12px 12px 12px
+}
+
+
+
+.footerlogos svg path {
+    fill:var(--celeste);
+    
+}
+
+.footerlogos {
+    width: 2em;
+    height: 2em;
+    margin-bottom: 10px;
+}
+
+.footerlogos:hover svg path {
+    fill:var(--verde) ;
+    transition: all 0.3s;
+}
+
+:root{
+    --titulares:24px;
+    --precios:18px;
+    --descuentos:16px;
+    --descripciones:12px;
+}
+titulares{
+    font-size: var(--titulares);
+}
+precios{
+    font-size: var(--precios);
+}
+
+descuentos{
+    font-size: var(--descuentos);
+    color: #39b54a;
+    padding-top: 2px;
+}
+descripciones{
+    font-size:var(--descripciones);
+}
+
+
+.titular {
+    display: none;
+}
+
+.displayPriceAndOffer:hover .titular {
+    display: block
+    
+}
+
+
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.imagenBanner{
+    width: 100%;
+}
+
+
+article img{
+    border-bottom: 1px solid var(--gris_claro);
+    height: 380px;
+    width: 360px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.camion{
+    width: 30px;
+    height: 30px;
+    
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    border-width: 1px;
+    padding: 5px;
+    background-color: #FFF;
+    display: block;
+    position: absolute;
+    right: 20px; 
+    top: -15px; 
+}
+.camionOrdenado{
+    position: relative;
+}
+
+main{
+    /* en la consigna decia dde cambiarle estas medidas al Main, pero esto genera que haya bordeds blancos al costado, en las fotos
+    no se muestran en las ilustraciones dichos bordes*/
+    /* width: 90%;
+    margin-left: 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+ main section{
+    background-color: var(--gris_claro);
+    padding:0px 15px;
+    margin: 0;
+    /* width: 420px; */
+}
+
+section{
+ width: 100%;
+}
+
+.contenedorPadre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.contenedorPadre .contenedorHijo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+}
+
+
+article{
+    height:100%;
+    margin-bottom: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerText{
+    text-align: center;
+    padding-top: 15px;
+}
+article p{
+    /* background-color: white; */
+    width: 360px;
+    padding-left: 10px;
+    
+}
+article div{
+    background-color: white;
+}
+article div div{
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+}
+
+article precios p, article descuentos p{
+    width: auto;
+ }
+h3{
+    height: 75px;
+    width: 100%;
+    padding: 15px 0 5px 15px;
+    margin-top: -4px;
+    color: var(--gris_oscuro);
+    font-size: 28px;
+    background-color: var(--gris_claro);
+    text-align: start;
+}
+.fillwhite{
+    width: 360px;
+}
+
+.Copyright{
+    margin-top: 30px;
+    color: var(--gris_oscuro);
+}
+
+/* Mobile */
+@media (max-width: 480px){
+    header{
+        height: 215px;
+    }
+    header nav ul{
+        display: none;
+    }
+    .camion:hover{
+        transform: rotate(-90deg);
+        transition: 
+        transform, 0.5s;
+    }
+}
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px){
+    header{
+        height: 215px;
+    }
+    header nav ul{
+        display: none;
+    }
+    .camion:hover{
+        transform: rotate(-90deg);
+        transition: 
+        transform, 0.5s;
+    }
+}
+/*  Small tablets */
+@media (min-width: 768px) and (max-width: 991px){
+    article{
+        width: 360px;
+        display: flex;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: space-around;
+        width: 100%;
+        max-width: 991px;
+        flex-wrap: wrap;
+    }
+    div.headerlogos{
+        display: none;
+    }
+    .camion:hover{
+        transform: rotate(-90deg);
+        transition: 
+        transform, 0.5s;
+    }
+    
+}
+/*  Large tablets/laptops */
+@media (min-width: 992px) and (max-width: 1199px){
+    article{
+        display: flex;
+        width: 360px;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1199px;
+    }
+    div.headerlogos{
+        display: none;
+    }
+    .camion:hover{
+        transform: rotate(-90deg);
+        transition: 
+        transform, 0.5s;
+    }
+}
+/*  Desktop */
+@media (min-width: 1200px) and (max-width: 1919px){
+    article{
+        width: 360px;
+        display: flex;   
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1919px;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+    div.headerlogos{
+        display: none;
+    }
+    .camion:hover{
+        transform: rotate(-90deg);
+        transition: 
+        transform, 0.5s;
+    }
+    footer{
+        display: flex;
+        flex: row;
+        flex-wrap: wrap;
+    }
+    footer section{
+        display: flex;
+        width: 33%;
+    }
+}
+/*  Extra large screen */
+@media (min-width: 1920px){
+    article{
+        width: 360px;
+        display: flex;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        
+        /* align-items: center; */
+    
+    }
+    div.headerlogos{
+        display: none;
+    }
+    .camion:hover{
+        transform: rotate(-90deg);
+        transition: 
+        transform, 0.5s;
+    }
+    footer{
+        display: flex;
+        flex: row;
+        flex-wrap: wrap;
+    }
+    footer section{
+        display: flex;
+        width: 33%;
+    }
+}

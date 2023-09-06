@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --amarillo:#EAC926;
+    --azul:#03264C;
+    --celeste:#1259c3;
+    --gris_claro:#ebebeb;
+    --gris_oscuro:#666;
+    --verde:#39b54a;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--gris_claro);
+}
+
+form{
+    width: 80%;
+    /* background-color:var(--gris_claro); */
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    /* box-shadow: 7px 13px 37px #666; */
+    border-radius: 24px;
+    padding: 20px 30px;
+    font-family: sans-serif;
+}
+
+.loginbar{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+ }
+
+form h1{
+    margin: 0;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.space{
+    margin-bottom: 10px;
+}
+
+.sub-title{
+    font-weight: bolder;
+}
+
+
+.button{
+    background-color: var(--gris_claro);
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+.button:hover{
+    border: none;
+    color: white;
+    background-color: #0022AA;
+    transition: 
+    all 0.5s;
+}
+
+header{
+    background-color: var(--amarillo);
+    height: 370px;
+    width: 100%;
+    padding: 20px 0px 0px 15px;
+}
+.buttonpadre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.buttonhijo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+/* / Mobile / */
+@media (max-width: 480px){
+}
+/* / Extra small devices / */
+@media (min-width: 481px) and (max-width: 767px){
+}
+/* /  Small tablets / */
+@media (min-width: 468px) and (max-width: 991px){
+}
+/* /  Large tablets/laptops / */
+@media (min-width: 992px) and (max-width: 1199px){
+}
+/* /  Desktop / */
+@media (min-width: 1200px) and (max-width: 1919px){
+}
+/* /  Extra large screen / */
+@media (min-width: 1920px){
+}
