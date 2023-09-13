@@ -25,6 +25,12 @@ app.get("/views/login",function (req, res) {
     
 })
 
+app.get("/views/pruebaheader",function (req, res) {
+    
+    res.sendFile(path.join(__dirname,"views","pruebaheader.html"))
+    
+})
+
 
 // app.get("/prueba", function(req, res){
 //     res.send("soy prueba")

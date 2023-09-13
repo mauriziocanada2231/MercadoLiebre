@@ -20,13 +20,7 @@ body{
 
 form{
     width: 80%;
-    /* background-color:var(--gris_claro); */
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    /* box-shadow: 7px 13px 37px #666; */
-    border-radius: 24px;
-    padding: 20px 30px;
     font-family: sans-serif;
 }
 
@@ -70,13 +64,6 @@ form h1{
     transition: 
     all 0.5s;
 }
-
-header{
-    background-color: var(--amarillo);
-    height: 370px;
-    width: 100%;
-    padding: 20px 0px 0px 15px;
-}
 .buttonpadre{
     display: flex;
     flex-direction: row;
@@ -87,7 +74,14 @@ header{
     width: 100%;
     justify-content: space-around;
 }
-
+header{
+    margin-bottom: 100px;
+}
+footer{
+    width: 80%;
+    justify-content: space-between;
+    margin-left: 10%;
+}
 
 /* / Mobile / */
 @media (max-width: 480px){
